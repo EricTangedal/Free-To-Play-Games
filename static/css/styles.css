@@ -1,0 +1,11 @@
+/* styles.css */
+.game-card {
+    margin-bottom: 20px;
+}
+.game-thumbnail {
+    width: 100%;
+    height: auto;
+}
+.loading-spinner {
+    display: none;
+}

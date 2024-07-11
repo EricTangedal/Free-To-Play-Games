@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-to-Play Games</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Free-to-Play Games</h1>
+        <div class="form-group">
+            <input type="text" id="search" class="form-control" placeholder="Search games...">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select id="genre" class="form-control">
+                    <option value="">All Genres</option>
+                    <!-- Add options dynamically from JS -->
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <select id="platform" class="form-control">
+                    <option value="">All Platforms</option>
+                    <!-- Add options dynamically from JS -->
+                </select>
+            </div>
+        </div>
+        <div id="games-list" class="row">
+            <!-- Games will be displayed here -->
+        </div>
+        <nav>
+            <ul class="pagination">
+                <!-- Pagination links will be added here dynamically -->
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
