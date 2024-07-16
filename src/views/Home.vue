@@ -1,5 +1,8 @@
 <template>
   <GameList />
+  <footer>
+      <p>&copy; 2024 Dun Central. All rights reserved.</p>
+  </footer>
 </template>
 
 <script>
@@ -14,5 +17,11 @@ export default {
 </script>
 
 <style scoped>
-/* Add any custom styles here if needed */
+footer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
 </style>
