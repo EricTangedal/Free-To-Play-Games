@@ -16,6 +16,12 @@ export default {
 };
 </script>
 
+<style>
+body {
+  background: black;
+}
+</style>
+
 <style scoped>
 footer {
   width: 80%;
